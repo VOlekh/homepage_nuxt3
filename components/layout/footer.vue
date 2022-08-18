@@ -8,23 +8,23 @@
         <div class="space-y-8 xl:col-span-1">
           <div class="flex items-start">
             <div class="flex justify-start">
-              <a href="index.html">
+              <NuxtLink to="/">
                 <span class="sr-only">VOLEKH</span>
                 <img
                   class="h-8 w-auto sm:h-10 text-gray-400 hover:-rotate-90 hover:text-gray-300"
                   fill="currentColor"
-                  src="logovo_35_35_small_gray_400.svg"
+                  src='../../public/logovo_35_35_small_gray_400.svg'
                   alt="logo"
                 />
-              </a>
+              </NuxtLink>
             </div>
             <div class="flex justify-start">
-              <a
-                href="index.html"
+              <NuxtLink
+                to="/"
                 class="mt-2 ml-2 text-base font-medium text-gray-400 hover:text-gray-300"
               >
                 Valentina Olekhnovich
-              </a>
+              </NuxtLink>
             </div>
           </div>
           <div class="mt-12 border-t border-gray-700 pt-8">
@@ -34,8 +34,8 @@
             </p>
           </div>
           <div class="flex space-x-6">
-            <a
-              href="https://www.linkedin.com/in/valentina-olekhnovich-8b7483108/"
+            <NuxtLink
+              to="https://www.linkedin.com/in/valentina-olekhnovich-8b7483108/"
               class="text-gray-400 hover:text-gray-300"
             >
               <span class="sr-only">LinkedIn</span>
@@ -51,10 +51,10 @@
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
+            </NuxtLink>
 
-            <a
-              href="https://github.com/VOlekh"
+            <NuxtLink
+              to="https://github.com/VOlekh"
               class="text-gray-400 hover:text-gray-300"
             >
               <span class="sr-only">GitHub</span>
@@ -70,10 +70,10 @@
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
+            </NuxtLink>
 
-            <a
-              href="https://twitter.com/val_cody_jam"
+            <NuxtLink
+              to="https://twitter.com/val_cody_jam"
               class="text-gray-400 hover:text-gray-300"
             >
               <span class="sr-only">Twitter</span>
@@ -87,10 +87,10 @@
                   d="M24 2.84684C23.1174 3.32792 22.1693 3.65297 21.1726 3.79989C22.201 3.0429 22.9704 1.85148 23.3373 0.447947C22.371 1.15395 21.3135 1.6509 20.2107 1.91719C19.4691 0.943152 18.4868 0.297546 17.4164 0.0806033C16.3459 -0.13634 15.2472 0.0875171 14.2907 0.71742C13.3343 1.34732 12.5737 2.34803 12.127 3.56417C11.6803 4.78031 11.5725 6.14385 11.8203 7.44309C9.86244 7.32216 7.94711 6.69618 6.19863 5.60576C4.45016 4.51535 2.90761 2.98487 1.6711 1.11366C1.2483 2.0108 1.0052 3.05097 1.0052 4.15875C1.00473 5.15601 1.20437 6.13799 1.58641 7.01757C1.96846 7.89715 2.52109 8.64713 3.19528 9.20098C2.4134 9.17037 1.64877 8.91049 0.965031 8.44295V8.52096C0.964952 9.91965 1.35827 11.2753 2.07823 12.3579C2.7982 13.4405 3.80048 14.1833 4.915 14.4603C4.18968 14.7018 3.42923 14.7374 2.69109 14.5644C3.00555 15.7678 3.61807 16.8203 4.44291 17.5742C5.26776 18.3282 6.26363 18.7461 7.29111 18.7692C5.5469 20.4535 3.39282 21.3672 1.17537 21.3632C0.782575 21.3633 0.39011 21.3351 0 21.2786C2.25083 23.0589 4.87097 24.0037 7.5469 24C16.6053 24 21.5573 14.7711 21.5573 6.76698C21.5573 6.50694 21.552 6.24429 21.5425 5.98425C22.5057 5.12738 23.3372 4.0663 23.9979 2.85074L24 2.84684Z"
                 />
               </svg>
-            </a>
+            </NuxtLink>
 
-            <a
-              href="https://www.facebook.com/valentina.olekhnovich"
+            <NuxtLink
+              to="https://www.facebook.com/valentina.olekhnovich"
               class="text-gray-400 hover:text-gray-300"
             >
               <span class="sr-only">Facebook</span>
@@ -106,43 +106,43 @@
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
+            </NuxtLink>
           </div>
         </div>
 
         <div class="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <a
-                href="index.html"
+              <NuxtLink
+                to="/"
                 class="text-sm font-semibold uppercase tracking-wider text-gray-400 hover:text-gray-300"
-                >Home</a
+                >Home</NuxtLink
               >
             </div>
             <div class="mt-12 md:mt-0">
-              <a
-                href="about.html"
+              <NuxtLink
+                to="/about"
                 class="text-sm font-semibold uppercase tracking-wider text-gray-400 hover:text-gray-300"
-                >About</a
+                >About</NuxtLink
               >
             </div>
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <a
-                href="contact.html"
+              <NuxtLink
+                to="/contact"
                 class="text-sm font-semibold uppercase tracking-wider text-gray-400 hover:text-gray-300"
-                >Contact</a
+                >Contact</NuxtLink
               >
             </div>
             <div class="mt-12 md:mt-0">
-              <a
-                href="valentina.olekhnovich_.cv.pdf"
+              <NuxtLink
+                to="valentina.olekhnovich_.cv.pdf"
                 download="valentina.olekhnovich_.cv.pdf"
                 class="whitespace-nowrap hover:text-gray-00 -mt-2 inline-flex items-center justify-end border border-gray-400 bg-slate-800 px-4 py-2 text-base font-medium text-gray-400 shadow-sm hover:bg-slate-700 hover:text-gray-300"
               >
                 Download CV
-              </a>
+              </NuxtLink>
             </div>
           </div>
         </div>
