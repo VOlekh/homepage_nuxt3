@@ -1,3 +1,8 @@
 <template>
-  <div>about</div>
+  <div>
+    <AboutHero />
+    <AboutIntroduction/>
+    <AboutCertificates/>
+    <AboutAction />
+  </div>
 </template>

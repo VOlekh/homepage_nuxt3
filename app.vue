@@ -1,7 +1,7 @@
 <template>
   <div>
     <LayoutHeader />
-    hi
+    <NuxtChild />
     <LayoutFooter />
   </div>
 </template>

@@ -9,7 +9,7 @@
             <span class="sr-only">VOLEKH</span>
             <img
               class="h-8 w-auto sm:h-10 hover:-rotate-90"
-              src="../../public/logovo_35_35_small.svg"
+              src="/logovo_35_35_small.svg"
               alt="logo"
             />
           </NuxtLink>
@@ -64,13 +64,13 @@
             Contact
           </NuxtLink>
 
-          <NuxtLink
-            to="valentina.olekhnovich_.cv.pdf"
+          <a
+            href="../../static/valentina.olekhnovich_.cv.pdf"
             download="valentina.olekhnovich_.cv.pdf"
             class="whitespace-nowrap ml-8 inline-flex items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700"
           >
             Download CV
-          </NuxtLink>
+          </a>
         </div>
       </div>
 
@@ -134,7 +134,7 @@
             </div>
             <div class="mt-6">
               <nav class="grid grid-cols-1 gap-7">
-                <NuxtLink href="/" class="-m-3 flex items-center p-3">
+                <NuxtLink to="/" class="-m-3 flex items-center p-3">
                   <div
                     class="ml-4 text-base font-medium text-white hover:text-gray-500"
                   >
@@ -151,13 +151,13 @@
                 </NuxtLink>
 
                 <div class="mt-6">
-                  <NuxtLink
-                    to="valentina.olekhnovich_.cv.pdf"
-                    download="valentina.olekhnovich_.cv.pdf"
+                  <a
+                    href="../../static/valentina.olekhnovich_.cv.pdf"
+                    download="/valentina.olekhnovich_.cv.pdf"
                     class="whitespace-nowrap ml-8 inline-flex items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700"
                   >
                     Download CV
-                  </NuxtLink>
+                  </a>
                   <p class="mt-6 text-center text-base font-medium text-white">
                     Have questions?
                     <NuxtLink to="/contact" class="text-gray-500 underline">

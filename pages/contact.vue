@@ -1,3 +1,7 @@
 <template>
-  <div>contact</div>
+  <div>
+    <ContactHero />
+    <ContactForm />
+    <ContactAction />
+  </div>
 </template>

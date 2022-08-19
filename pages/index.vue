@@ -1,8 +1,7 @@
 <template>
   <div>
-    <!-- <BlockHero />
+    <BlockHero />
     <BlockProjects/>
-    <BlockAction /> -->
-   hi
+    <BlockAction />
   </div>
 </template>
