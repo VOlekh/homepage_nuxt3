@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="relative bg-slate-800">
+    <Popover class="relative bg-slate-800">
       <div
         class="flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10"
       >
@@ -20,9 +20,9 @@
           </NuxtLink>
         </div>
         <div class="-my-2 -mr-2 md:hidden">
-          <button
+          <PopoverButton
             type="button"
-            class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            class="inline-flex items-center justify-center border border-white p-2 text-white hover:bg-slate-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-800"
             aria-expanded="false"
           >
             <span class="sr-only">Open menu</span>
@@ -42,9 +42,11 @@
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-          </button>
+          </PopoverButton>
         </div>
-        <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+        <PopoverGroup
+          class="hidden items-center justify-end md:flex md:flex-1 lg:w-0"
+        >
           <NuxtLink
             to="/"
             class="whitespace-nowrap ml-8 text-base font-medium text-white hover:text-gray-500"
@@ -71,106 +73,129 @@
           >
             Download CV
           </a>
-        </div>
+        </PopoverGroup>
       </div>
 
-      <!--
-        Mobile menu, show/hide based on mobile menu state.
-    
-        Entering: "duration-200 ease-out"
-          From: "opacity-0 scale-95"
-          To: "opacity-100 scale-100"
-        Leaving: "duration-100 ease-in"
-          From: "opacity-100 scale-100"
-          To: "opacity-0 scale-95"
-      -->
-      <div
-        class="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+      <transition
+        enter-active-class="duration-200 ease-out"
+        enter-from-class="opacity-0 scale-95"
+        enter-to-class="opacity-100 scale-100"
+        leave-active-class="duration-100 ease-in"
+        leave-from-class="opacity-100 scale-100"
+        leave-to-class="opacity-0 scale-95"
       >
-        <div
-          class="divide-y-2 divide-gray-50 bg-slate-800 shadow-lg ring-1 ring-black ring-opacity-5"
+        <PopoverPanel
+          focus
+          class="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
         >
-          <div class="px-5 pt-5 pb-6">
-            <div class="flex items-center justify-between">
+          <div
+            class="divide-y-2 divide-gray-50 bg-slate-800 shadow-lg ring-1 ring-black ring-opacity-5"
+          >
+            <div class="px-5 pt-5 pb-6">
               <div class="flex items-center justify-between">
-                <NuxtLink
-                  href="/"
-                  class="whitespace-nowrap mr-4 inline-flex items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm"
-                >
-                  V O L E K H
-                </NuxtLink>
-                <div>
-                  <img
-                    class="h-8 w-auto hover:-rotate-90"
-                    src="../../public/logovo_35_35_small.svg"
-                    alt="VOLEKH"
-                  />
-                </div>
-              </div>
-              <div class="-mr-2">
-                <button
-                  type="button"
-                  class="inline-flex items-center justify-center border border-white p-2 text-gray-400 hover:bg-slate-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                >
-                  <span class="sr-only">Close menu</span>
-                  <!-- Heroicon name: outline/x -->
-                  <svg
-                    class="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    aria-hidden="true"
+                <div class="flex items-center justify-between">
+                  <NuxtLink
+                    to="/"
+                    class="whitespace-nowrap mr-4 inline-flex items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-800"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
+                    V O L E K H
+                  </NuxtLink>
+
+                  <NuxtLink to="/">
+                    <span class="sr-only">VOLEKH</span>
+                    <img
+                      class="h-8 w-auto sm:h-10 text-white hover:-rotate-90 hover:text-gray-300"
+                      fill="currentColor"
+                      src="/logovo_35_35_small.svg"
+                      alt="logo"
                     />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="mt-6">
-              <nav class="grid grid-cols-1 gap-7">
-                <NuxtLink to="/" class="-m-3 flex items-center p-3">
-                  <div
-                    class="ml-4 text-base font-medium text-white hover:text-gray-500"
-                  >
-                    Home
-                  </div>
-                </NuxtLink>
-
-                <NuxtLink to="/about" class="-m-3 flex items-center p-3">
-                  <div
-                    class="ml-4 text-base font-medium text-white hover:text-gray-500"
-                  >
-                    About
-                  </div>
-                </NuxtLink>
-
-                <div class="mt-6">
-                  <a
-                    href="../../static/valentina.olekhnovich_.cv.pdf"
-                    download="/valentina.olekhnovich_.cv.pdf"
-                    class="whitespace-nowrap ml-8 inline-flex items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700"
-                  >
-                    Download CV
-                  </a>
-                  <p class="mt-6 text-center text-base font-medium text-white">
-                    Have questions?
-                    <NuxtLink to="/contact" class="text-gray-500 underline">
-                      Contact me
-                    </NuxtLink>
-                  </p>
+                  </NuxtLink>
                 </div>
-              </nav>
+                <div class="-mr-2">
+                  <PopoverButton
+                    type="button"
+                    class="inline-flex items-center justify-center border border-white p-2 text-gray-400 hover:bg-slate-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-800"
+                  >
+                    <span class="sr-only">Close menu</span>
+                    <!-- Heroicon name: outline/x -->
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </PopoverButton>
+                </div>
+              </div>
+              <div class="mt-6">
+                <nav class="grid grid-cols-1 gap-7">
+                  <NuxtLink to="/" class="-m-3 flex items-center p-3">
+                    <div
+                      class="ml-4 text-base font-medium text-white hover:text-gray-500"
+                    >
+                      Home
+                    </div>
+                  </NuxtLink>
+
+                  <NuxtLink to="/about" class="-m-3 flex items-center p-3">
+                    <div
+                      class="ml-4 text-base font-medium text-white hover:text-gray-500"
+                    >
+                      About
+                    </div>
+                  </NuxtLink>
+
+                  <div class="mt-6">
+                    <a
+                      href="../../static/valentina.olekhnovich_.cv.pdf"
+                      download="/valentina.olekhnovich_.cv.pdf"
+                      class="whitespace-nowrap ml-8 inline-flex items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700"
+                    >
+                      Download CV
+                    </a>
+                    <p
+                      class="mt-6 text-center text-base font-medium text-white"
+                    >
+                      Have questions?
+                      <NuxtLink to="/contact" class="text-gray-500 underline">
+                        Contact me
+                      </NuxtLink>
+                    </p>
+                  </div>
+                </nav>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </PopoverPanel>
+      </transition>
+    </Popover>
   </header>
 </template>
-<script></script>
+
+<script>
+import {
+  Popover,
+  PopoverButton,
+  PopoverGroup,
+  PopoverPanel,
+} from "@headlessui/vue";
+
+export default {
+  name: "Header",
+  components: {
+    Popover,
+    PopoverButton,
+    PopoverGroup,
+    PopoverPanel,
+  },
+};
+</script>
