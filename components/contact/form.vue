@@ -22,6 +22,7 @@
               <input
                 type="text"
                 name="name"
+                v-model="name"
                 id="name"
                 autocomplete="given-name"
                 class="text-slate-800 border-slate-800 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
@@ -37,6 +38,7 @@
               <input
                 id="email"
                 name="email"
+                v-model="email"
                 type="email"
                 autocomplete="email"
                 class="text-slate-800 border-slate-800 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
@@ -54,6 +56,7 @@
               <input
                 id="subject"
                 name="subject"
+                v-model="subject"
                 type="text"
                 class="text-slate-800 border-slate-800 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
               />
@@ -77,6 +80,7 @@
               <textarea
                 id="message"
                 name="message"
+                v-model="message"
                 rows="4"
                 class="text-slate-800 border-slate-800 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
                 aria-describedby="message-max"
@@ -85,12 +89,13 @@
           </div>
           <div class="sm:col-span-2 sm:flex sm:justify-end">
             <div class="m-8">
-              <a
-                href="#"
+              <button
+                type="submit"
+                @click.prevent="send"
                 class="whitespace-nowrap hover: mt-4 inline-flex w-36 items-center justify-center border border-slate-800 bg-white px-4 py-2 text-base font-medium uppercase text-slate-800 shadow-sm hover:bg-slate-700 hover:text-white"
               >
                 Send
-              </a>
+              </button>
             </div>
           </div>
         </form>
@@ -98,3 +103,21 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data: () => ({
+    email: "",
+    message: "",
+  }),
+  methods: {
+    send() {
+      this.$mail.send({
+        from: this.email,
+        name: this.name,
+        subject: "Contact form message",
+        text: this.message,
+      });
+    },
+  },
+};
+</script>
