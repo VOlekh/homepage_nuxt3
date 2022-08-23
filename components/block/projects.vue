@@ -7,7 +7,7 @@
         >
           <img
             class="h-56 w-full lg:h-screen object-cover lg:absolute"
-            src="WeHelpDarkBlueBgBig.png"
+            src="../../public/WeHelpDarkBlueBgBig.png"
             alt="WeHelp"
           />
         </div>
@@ -142,7 +142,7 @@
           <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
             <img
               class="h-56 w-full object-cover lg:absolute lg:h-full"
-              src="MyReads.jpg"
+              src="../../public/MyReads.jpg"
               alt="MyReads"
             />
           </div>
@@ -282,7 +282,7 @@
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             class="h-56 w-full object-cover lg:absolute lg:h-full"
-            src="WouldYouRather.gif"
+            src="../../public/WouldYouRather.gif"
             alt="MyReads"
           />
         </div>
