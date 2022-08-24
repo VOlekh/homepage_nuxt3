@@ -25,7 +25,12 @@
             <p class="mt-4 text-lg text-gray-500 sm:mt-3">
               Internship project. The website helps refugees to solve complex
               problems in the EU. To find my pull requests with demo links,
-              please refer to GitHub / closed pull requests.
+              please refer to
+              <a
+                class="underline hover:text-gray-700"
+                href="https://github.com/wehelplive/wehelp.live/pulls?q=is%3Apr+is%3Aclosed+author%3AVOlekh"
+                >GitHub / closed pull requests</a
+              >.
             </p>
             <div class="mt-8">
               <div class="flex items-center">
