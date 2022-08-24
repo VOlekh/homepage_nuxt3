@@ -25,7 +25,7 @@
                 v-model="name"
                 id="name"
                 autocomplete="given-name"
-                class="text-slate-800 border-slate-800 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                class="text-slate-800 border border-slate-200 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
               />
             </div>
           </div>
@@ -41,7 +41,7 @@
                 v-model="email"
                 type="email"
                 autocomplete="email"
-                class="text-slate-800 border-slate-800 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                class="text-slate-800 border border-slate-200 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
               />
             </div>
           </div>
@@ -58,7 +58,7 @@
                 name="subject"
                 v-model="subject"
                 type="text"
-                class="text-slate-800 border-slate-800 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                class="text-slate-800 border border-slate-200 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
               />
             </div>
           </div>
@@ -82,7 +82,7 @@
                 name="message"
                 v-model="message"
                 rows="4"
-                class="text-slate-800 border-slate-800 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                class="text-slate-800 border border-slate-200 block w-full py-3 px-4 shadow-sm focus:border-teal-500 focus:ring-teal-500"
                 aria-describedby="message-max"
               ></textarea>
             </div>
@@ -92,7 +92,7 @@
               <button
                 type="submit"
                 @click.prevent="send"
-                class="whitespace-nowrap hover: mt-4 inline-flex w-36 items-center justify-center border border-slate-800 bg-white px-4 py-2 text-base font-medium uppercase text-slate-800 shadow-sm hover:bg-slate-700 hover:text-white"
+                class="whitespace-nowrap mt-4 inline-flex w-36 items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium uppercase text-white shadow-sm hover:bg-slate-700 hover:text-gray-500"
               >
                 Send
               </button>
