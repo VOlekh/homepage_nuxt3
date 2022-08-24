@@ -163,8 +163,8 @@
                 My Reads
               </h2>
               <p class="mt-4 text-lg text-gray-500 sm:mt-3">
-                The user has 3 shelves with books Wat to read, Currently
-                reading, Read. The user can move books from one shelve to
+                The user has 3 shelves with books "Want to read", "Currently
+                reading", "Read". The user can move books from one shelve to
                 another, can see a short description of the book, search for new
                 books in a shop, and add them on to the shelves.
                 <br /><br />The App was rewritten from a static page into a
