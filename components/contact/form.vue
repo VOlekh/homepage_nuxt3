@@ -8,14 +8,12 @@
         </h3>
         <div class="mt-12 border-t border-gray-700 pt-8"></div>
         <form
-          action="#"
-          method="POST"
+          ref="form"
+          @submit.prevent="sendEmail"
           class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
         >
           <div>
-            <label
-              for="first-name"
-              class="class=mt-4 text-lg text-gray-500 sm:mt-3"
+            <label for="name" class="class=mt-4 text-lg text-gray-500 sm:mt-3"
               >Name</label
             >
             <div class="mt-1">
@@ -87,15 +85,14 @@
               ></textarea>
             </div>
           </div>
+
           <div class="sm:col-span-2 sm:flex sm:justify-end">
             <div class="m-8">
-              <button
+              <input
                 type="submit"
-                @click.prevent="send"
+                value="Send"
                 class="whitespace-nowrap mt-4 inline-flex w-36 items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium uppercase text-white shadow-sm hover:bg-slate-700 hover:text-gray-500"
-              >
-                Send
-              </button>
+              />
             </div>
           </div>
         </form>
@@ -104,19 +101,41 @@
   </div>
 </template>
 <script>
+import emailjs from "emailjs-com";
+
 export default {
-  data: () => ({
-    email: "",
-    message: "",
-  }),
+  name: "ContactUs",
+  data() {
+    return {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    };
+  },
   methods: {
-    send() {
-      this.$mail.send({
-        from: this.email,
-        name: this.name,
-        subject: "Contact form message",
-        text: this.message,
-      });
+    sendEmail(e) {
+      try {
+        emailjs.sendForm(
+          "service_kvzv3iw",
+          "template_r3evzsx",
+          e.target,
+          "VtH4UYu0hF5AqMiZd",
+          {
+            name: this.name,
+            email: this.email,
+            subject: this.subject,
+            message: this.message,
+          }
+        );
+      } catch (error) {
+        console.log({ error });
+      }
+
+      this.name = "";
+      this.email = "";
+      this.subject = "";
+      this.message = "";
     },
   },
 };
