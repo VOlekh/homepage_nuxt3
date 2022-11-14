@@ -13,6 +13,7 @@ export const fetchProjects = async (offset = null) => {
       const nextResponse = await fetchProjects(response.offset);
       return [...response.records, ...nextResponse];
     }
+
     return response.records;
   } catch (error) {
     console.log(error);
