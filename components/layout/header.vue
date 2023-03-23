@@ -67,7 +67,7 @@
           </NuxtLink>
 
           <a
-            href="/static/valentina.olekhnovich.cv.pdf"
+            href="../../public/valentina.olekhnovich.cv.pdf"
             download
             class="whitespace-nowrap ml-8 inline-flex items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700"
           >
@@ -156,7 +156,7 @@
 
                   <div class="mt-6">
                     <a
-                      href="/static/valentina.olekhnovich.cv.pdf"
+                      href="../../public/valentina.olekhnovich.cv.pdf"
                       download
                       class="whitespace-nowrap ml-8 inline-flex items-center justify-center border border-white bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700"
                     >
