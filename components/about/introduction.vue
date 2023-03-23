@@ -5,7 +5,7 @@
     >
       <img
         class="h-full w-full object-cover"
-        src="../../public/QG7A7709.jpg"
+        src="/QG7A7709.jpg"
         alt="Portrait"
       />
     </div>

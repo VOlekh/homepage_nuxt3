@@ -13,7 +13,7 @@
                 <img
                   class="h-8 w-auto sm:h-10 text-gray-400 hover:-rotate-90 hover:text-gray-300"
                   fill="currentColor"
-                  src='/logovo_35_35_small_gray_400.svg'
+                  src="/logovo_35_35_small_gray_400.svg"
                   alt="logo"
                 />
               </NuxtLink>
@@ -137,8 +137,8 @@
             </div>
             <div class="mt-12 md:mt-0">
               <a
-                href="../../static/valentina.olekhnovich_.cv.pdf"
-                download="/valentina.olekhnovich_.cv.pdf"
+                href="/static/valentina.olekhnovich.cv.pdf"
+                download
                 class="whitespace-nowrap hover:text-gray-00 -mt-2 inline-flex items-center justify-end border border-gray-400 bg-slate-800 px-4 py-2 text-base font-medium text-gray-400 shadow-sm hover:bg-slate-700 hover:text-gray-300"
               >
                 Download CV
@@ -149,7 +149,7 @@
       </div>
       <div class="mt-12 border-t border-gray-700 pt-8">
         <p class="text-base text-gray-400 xl:text-center">
-          &copy; 2022 V O L E K H. All rights reserved.
+          &copy; 2023 V O L E K H. All rights reserved.
         </p>
       </div>
     </div>

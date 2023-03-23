@@ -23,7 +23,7 @@
           <div class="flex-shrink-0">
             <img
               class="h-48 w-full object-cover"
-              src="../../public/Udacity.jpg"
+              src="/Udacity.jpg"
               alt="Udacity"
             />
           </div>
@@ -60,7 +60,7 @@
           <div class="flex-shrink-0">
             <img
               class="h-48 w-full object-cover"
-              src="../../public/MADI.jpg"
+              src="/MADI.jpg"
               alt="MADI"
             />
           </div>
