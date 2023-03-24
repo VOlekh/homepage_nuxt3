@@ -32,12 +32,12 @@
               <p class="text-sm font-medium text-cyan-600">
                 <a href="https://www.udacity.com/"> Udacity </a>
               </p>
-              <ul>
+              <ul class="list-disc p-6">
                 <li class="text-xl font-semibold text-gray-900">
-                  React Nanodegree Program
+                  React Nanodegree Program,
                 </li>
                 <li class="text-xl font-semibold text-gray-900">
-                  Front End Web Developer Course
+                  Front End Web Developer Course,
                 </li>
                 <li class="text-xl font-semibold text-gray-900">
                   Intro to Programming
@@ -58,11 +58,7 @@
         <!-- Card -->
         <div class="flex flex-col overflow-hidden shadow-lg">
           <div class="flex-shrink-0">
-            <img
-              class="h-48 w-full object-cover"
-              src="/MADI.jpg"
-              alt="MADI"
-            />
+            <img class="h-48 w-full object-cover" src="/MADI.jpg" alt="MADI" />
           </div>
           <div class="flex flex-1 flex-col justify-between bg-white p-6">
             <div class="flex-1">
@@ -70,9 +66,11 @@
                 Moscow State Automobile and Road Technical Institute (State
                 TechnicalUniversity) (MADI)
               </p>
-              <p class="text-xl font-semibold text-gray-900">
-                Engineer, Computer Science
-              </p>
+              <ul class="list-disc p-6">
+                <li class="text-xl font-semibold text-gray-900">
+                  Engineer, Computer Science
+                </li>
+              </ul>
             </div>
             <div class="mt-6 flex items-center">
               <div class="ml-3">

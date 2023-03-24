@@ -26,10 +26,11 @@
         <p class="mt-4 text-lg text-gray-300">
           I've finished 1,5 years of educational programs with Udacity and have
           9 month of practical experience as a Web Developer Intern Worked
-          closly with designers, coded, did code reviews and retrospectives,
-          helped colleagues and accepted help. I'm comfortable with HTML, CSS,
-          JavaScript, and modern frameworks such as React or VUE, REST APIs. I
-          have 5 years of Engineer's degree in Computer Science.
+          closly with designers, coded in a team, did code reviews and
+          retrospectives, helped colleagues and accepted help. I'm comfortable
+          with HTML, CSS, JavaScript, have experience in modern frameworks such
+          as React or VUE, REST APIs. I have 5 years of Engineer's degree in
+          Computer Science.
         </p>
         <p class="mt-4 text-lg text-gray-300">
           I'm a responsible, goal-oriented person who it is easy to communicate
@@ -56,8 +57,16 @@
                   />
                 </svg>
                 <p class="opacity-35 mt-6 text-xl font-medium text-white">
-                  You can find pictures of the Bavarian Alps and tech notes
-                  about my coding journey on
+                  You can find LeetCode exercises on 
+                  <a
+                    href="https://github.com/VOlekh/leetcode_arrays"
+                    class="text-gray-200 underline"
+                  >
+                    GitHub
+                  </a>
+                </p>
+                <p class="opacity-35 mt-6 text-xl font-medium text-white">
+                  or some tech notes about my coding journey on
                   <a
                     href="https://twitter.com/val_cody_jam"
                     class="text-gray-200 underline"
@@ -68,7 +77,7 @@
               </div>
               <footer class="mt-6">
                 <p class="text-base font-medium text-white">Kind regards,</p>
-                <p class="text-base font-medium text-cyan-100">
+                <p class="text-base font-medium text-white">
                   Valentina Olekhnovich
                 </p>
               </footer>
