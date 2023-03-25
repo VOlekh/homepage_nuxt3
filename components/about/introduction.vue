@@ -25,12 +25,11 @@
         </p>
         <p class="mt-4 text-lg text-gray-300">
           I've finished 1,5 years of educational programs with Udacity and have
-          9 month of practical experience as a Web Developer Intern Worked
-          closly with designers, coded in a team, did code reviews and
-          retrospectives, helped colleagues and accepted help. I'm comfortable
-          with HTML, CSS, JavaScript, have experience in modern frameworks such
-          as React or VUE, REST APIs. I have 5 years of Engineer's degree in
-          Computer Science.
+          9 months of practical experience as a Web Developer Intern Working
+          closely with designers, coding in a team, did code reviews and
+          retrospectives. I'm comfortable with HTML, CSS, and JavaScript, and
+          have experience in modern frameworks such as React or VUE, and REST
+          APIs. I have 5 years of Engineer's degree in Computer Science.
         </p>
         <p class="mt-4 text-lg text-gray-300">
           I'm a responsible, goal-oriented person who it is easy to communicate
@@ -57,7 +56,7 @@
                   />
                 </svg>
                 <p class="opacity-35 mt-6 text-xl font-medium text-white">
-                  You can find LeetCode exercises on 
+                  You can find LeetCode exercises on
                   <a
                     href="https://github.com/VOlekh/leetcode_arrays"
                     class="text-gray-200 underline"
