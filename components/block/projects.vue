@@ -126,7 +126,7 @@
             </div>
             <div class="m-8">
               <a
-                href="https://wehelp.live/"
+                href="https://deploy-preview-78--wehelpvip.netlify.app/"
                 class="whitespace-nowrap hover: mt-4 inline-flex w-36 items-center justify-center border border-slate-800 bg-white px-4 py-2 text-base font-medium uppercase text-slate-800 shadow-sm hover:bg-slate-700 hover:text-white"
               >
                 preview
@@ -307,9 +307,9 @@
               Rather?” game. The game goes like this: A user is asked a question
               in the form: “Would you rather [option A] or [option B]?”.
               Answering "neither" or "both" is against the rules. User is able
-              to answer questions, see which questions he/she didn't answer,
-              see how other people voted, post questions, and see the
-              ranking of users on the leaderboard.
+              to answer questions, see which questions he/she didn't answer, see
+              how other people voted, post questions, and see the ranking of
+              users on the leaderboard.
               <br /><br />This project solidify understanding of React and
               Redux.
             </p>
